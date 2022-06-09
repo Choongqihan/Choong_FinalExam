@@ -1,0 +1,15 @@
+---
+# tasks file for roles/ubuntu-git
+- name: create directory
+  file:
+    path: /home/choong/repo
+    state: directory
+    mode: '777'
+
+- name: clone prelim repo
+  git:
+    repo: 'https://github.com/Choongqihan/Choong_PrelimExam.git'
+    dest: /home/choong/repo
+    version: prelim-exam
+    clone: yes
+    update: yes
