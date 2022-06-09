@@ -4,8 +4,8 @@
   vars_files:
     - ./config.yaml
   roles:
-    - ubuntu-es
+    - ubuntu-ftp
     - ubuntu-git
-    - ubuntu-mt
+    - ubuntu-prom
     - ubuntu-motd
 

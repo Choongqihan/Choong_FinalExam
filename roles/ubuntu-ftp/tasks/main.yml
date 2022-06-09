@@ -1,5 +1,5 @@
 ---
-# tasks file for roles/ubuntu-es
+# tasks file for roles/ubuntu-ftp
 - name: install vsftpd ubuntu
   apt:
     name: vsftpd
@@ -15,14 +15,8 @@
 - name: create ftp user
   user:
     name: choong
-    password: $5$xMiO/a6ntt7Jl25P$z0BnHIGMy0uUjEu/gHikvHO6dga8qj0JYoiDRA.OYh/
+    password: chottt123
     comment: "FTP user successfully created"
-
-- name: add deny user
-  lineinfile:
-    path: /etc/ssh/sshd_config
-    line: "DenyUser choong"
-  register: ssh_config
 
 - name: create ftp dir
   file:

@@ -10,6 +10,5 @@
   git:
     repo: 'https://github.com/Choongqihan/Choong_PrelimExam.git'
     dest: /home/choong/repo
-    version: prelim-exam
     clone: yes
     update: yes
